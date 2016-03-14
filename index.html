@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+    <title>Boundless Geo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="css/lib/font-awesome.css" rel="stylesheet">
+    <!-- Zocial CSS -->
+    <link href="css/lib/zocial.css" rel="stylesheet">
+    <!-- Nivo Lightbox CSS -->
+    <link href="css/lib/nivo-lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/lib/nivo-themes/default/default.css" type="text/css" />
+    <!-- STYLE CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Color Scheme CSS -->
+    <link href="css/scheme/darkblue.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="http://openlayers.org/en/v3.14.2/css/ol.css" type="text/css">
+    <script src="http://openlayers.org/en/v3.14.2/build/ol.js" type="text/javascript"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll">
+    <div id="loader"></div>
+    <div id="main-wrapper">
+        <div id="sidebar">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="images/boundless_logo_white.png" width="150" alt="logo garis" style="display:inline-block">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a class="sscroll" href="#home">Home</a>
+                        </li>
+                        <li><a class="sscroll" href="#about">About</a>
+                        </li>
+                        <li><a class="sscroll" href="#downloads">Downloads</a>
+                        </li>
+                        <li><a class="sscroll" href="#help">Help</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+
+
+        </div>
+        <div id="container">
+            <!-- BEGIN HOME -->
+            <section id="home" class="home">
+               	<div id="home-slide"">
+                    <ul class="slides-container text-center">
+                        <li>
+                        	<div class="slide-text">
+                                <h2>Boundless Geo AMI</h2>
+                                <span>Vivamus sit amet libero turpis non venenatis urna in blandit</span>
+                                <br/><br/>
+                                <a class="sscroll btn btn-light" href="#downloads">Learn More</a>
+                            </div>
+                            <div class="slide-filter"></div>
+                           <div id="map" class="map" style="opacity:0.3"></div>
+    						<script type="text/javascript">
+      							var map = new ol.Map({
+        						target: 'map',
+        						layers: [
+          							new ol.layer.Tile({
+            						source: new ol.source.Stamen({layer: 'terrain'})
+          								})
+        							],
+        						view: new ol.View({
+          						center: ol.proj.fromLonLat([-73.981853,40.768078]),
+          						zoom: 16
+        							})
+      							});
+   				 			</script>
+                        </li>
+                        <li>
+                            <div class="slide-text">
+                                <h2>Boundless Geo AMI</h2>
+                                <span>Vivamus sit amet libero turpis non venenatis urna in blandit</span>
+                                <br/><br/>
+                                <a class="sscroll btn btn-light" href="#downloads">Learn More</a>
+                            </div>
+                            <div class="slide-filter"></div>
+                           <div id="map2" class="map" style="opacity:0.3"></div>
+    						<script type="text/javascript">
+      							var map2 = new ol.Map({
+        						target: 'map2',
+        						layers: [
+          							new ol.layer.Tile({
+            						source: new ol.source.Stamen({layer: 'terrain'})
+          								})
+        							],
+        						view: new ol.View({
+          						center: ol.proj.fromLonLat([-122.409751,37.807335]),
+          						zoom: 16
+        							})
+      							});
+   				 			</script>
+                        </li>
+                        <li>
+                            <div class="slide-text">
+                                <h2>Boundless Geo AMI</h2>
+                                <span>Vivamus sit amet libero turpis non venenatis urna in blandit</span>
+                                <br/><br/>
+                                <a class="sscroll btn btn-light" href="#downloads">Learn More</a>
+                            </div>
+                            <div class="slide-filter"></div>
+                           <div id="map3" class="map" style="opacity:0.3"></div>
+    						<script type="text/javascript">
+      							var map3 = new ol.Map({
+        						target: 'map3',
+        						layers: [
+          							new ol.layer.Tile({
+            						source: new ol.source.Stamen({layer: 'terrain'})
+          								})
+        							],
+        						view: new ol.View({
+          						center: ol.proj.fromLonLat([-87.618853,41.881954]),
+          						zoom: 16
+        							})
+      							});
+   				 			</script>
+                        </li>
+                    </ul>
+                    <nav class="slides-navigation slidez">
+                        <a href="javascript:;" class="next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="javascript:;" class="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    </nav>
+                </div>
+            </section>
+            <!-- END HOME -->
+            <!-- BEGIN ABOUT -->
+            <section id="about" class="services odd">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-content">
+                            <h2>About</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mg-bt-40">
+                        <p>An sincerity so extremity he additions. Her yet there truth merit. Mrs all projecting favourable now unpleasing. Son law garden chatty temper. Oh children provided to mr elegance marriage strongly. Off can admiration prosperous now devonshire diminution law.</p>
+                        <ul class="list">
+                            <li>Entreaties</li>
+                            <li>Dissimilar terminated</li>
+                            <li>Ecstatic children</li>
+                            <li>Assured hearing</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-4 mg-bt-40">
+                                <div class="row services-item">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <div class="services-icon">
+                                            <i class="fa fa-link"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-9">
+                                        <div class="services-desc">
+                                            <h4>Fast Deployment</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis uset pretium nisl non justo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mg-bt-40">
+                                <div class="row services-item">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <div class="services-icon">
+                                            <i class="fa fa-rotate-right"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-9">
+                                        <div class="services-desc">
+                                            <h4>Reuse Items</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis uset pretium nisl non justo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mg-bt-40">
+                                <div class="row services-item">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <div class="services-icon">
+                                            <i class="fa fa-lightbulb-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-9">
+                                        <div class="services-desc">
+                                            <h4>Great Ideas</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis uset pretium nisl non justo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- END ABOUT -->
+            <!-- BEGIN DOWNLOADS -->
+            <section id="downloads" class="about">
+                <div class="row">
+                    <div class="col-md-12 mg-bt-20">
+                        <div class="header-content">
+                            <h2>Downloads</h2>
+                        </div>
+                        <p>Too cultivated use solicitude frequently. Dashwood <a href="javascript:;">likewise</a> up consider continue entrance ladyship oh. Wrong guest given purse power is no. Friendship to
+                            <strong>connection</strong>&nbsp; an am considered difficulty. Country met pursuit lasting moments why calling certain the. Middletons boisterous our way understood law.</p>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row mg-bt-40">
+                            <div class="col-md-3">
+                                <div class="teams">
+                                    <div class="desc">
+                                        <h3>OpenLayers Documentation</h3>
+                                        <p>Known tiled but sorry joy balls. Sudden manner indeed fat now feebly. Face do with in need of wife paid that be.</p>
+                                    </div>
+                                    <div class="btn-container">
+                                    	<a class="btn btn-light small btn-block" href="#">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="teams">
+                                    <div class="desc">
+                                        <h3>OpenLayers Library</h3>
+                                        <p>Known tiled but sorry joy balls. Sudden manner indeed fat now feebly. Face do with in need of wife paid that be.</p>
+                                    </div>
+                                    <div class="btn-container">
+                                    	<a class="btn btn-light small btn-block" href="#">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="teams">
+                                    <div class="desc">
+                                        <h3>Boundless Desktop for Windows</h3>
+                                        <p>Known tiled but sorry joy balls. Sudden manner indeed fat now feebly. Face do with in need of wife paid that be.</p>
+                                    </div>
+                                    <div class="btn-container">
+                                    	<a class="btn btn-light small btn-block" href="#">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="teams">
+                                    <div class="desc">
+                                        <h3>Boundless Desktop for Mac</h3>
+                                        <p>Known tiled but sorry joy balls. Sudden manner indeed fat now feebly. Face do with in need of wife paid that be.</p>
+                                    </div>
+                                    <div class="btn-container">
+                                    	<a class="btn btn-light small btn-block" href="#">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END DOWNLOADS -->
+            <!-- BEGIN HELP -->
+            <section id="contact" class="contact odd">
+                <div class="row">
+                    <div class="col-md-12 mg-bt-80">
+                        <div class="header-content">
+                            <h2>Need help?</h2>
+                            <h3>We're here to help you.</h3>
+                        </div>
+                        <p>Too cultivated use solicitude frequently. Dashwood <a href="javascript:;">likewise</a> up consider continue entrance ladyship oh. Wrong guest given purse power is no. Friendship to
+                            <strong>connection</strong>&nbsp; an am considered difficulty. Country met pursuit lasting moments why calling certain the. Middletons boisterous our way understood law.</p>
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <form role="form">
+                            <div class="form-group row">
+                                <div class="col-md-8">
+                                    <input type="email" class="form-control col-md-6" id="exampleInputEmail1" placeholder="Enter email">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="subject">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-lg-11">
+                                    <textarea class="form-control" id="inputmessages" rows="10"></textarea>
+                                </div>
+                            </div>
+                            <br/>
+                            <button type="submit" class="btn btn-light big">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <p>J. Appleseed
+                            <br>1700 M St NW
+                            <br>Washington DC, USA</p>
+                        <br/>
+                        <p>
+                            Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet
+                            <strong>libero</strong>turpis, non venenatis urna. In blandit, odio convallis suscipit.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- END HELP -->
+            <!-- BEGIN FOOTER -->
+            <footer>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            <strong>Boundless</strong>&nbsp;2016. Designed by @reynalddizon
+                        </p>
+                    </div>
+                </div>
+            </footer>
+            <!-- END FOOTER -->
+        </div>
+    </div>
+
+
+    <div class="totop" id="backtotop">
+        <span>
+            <a href="#home" class="first sscroll"><i class="fa fa-angle-up"></i></a>
+            <a href="#home" class="hover sscroll"><i class="fa fa-angle-up"></i></a>
+        </span>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Jquery Source -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <!-- Nivo Light Box Source -->
+    <script src="js/lib/nivo-lightbox.min.js"></script>
+    <!-- Bootstrap Source -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Superslides Source -->
+    <script src="js/lib/jquery.superslides.min.js"></script>
+    <!-- Smoothscroll Source -->
+    <script src="js/lib/smoothscroll.js"></script>
+    <!-- Sudo Slider Source -->
+    <script src="js/lib/jquery.sudoslider.min.js"></script>
+    <!-- Mixitup Source -->
+    <script src="js/lib/jquery.mixitup.min.js"></script>
+    <!-- Back to Top Source -->
+    <script src="js/lib/jquery.backtotop.js"></script>
+    <!-- Backstretch Source -->
+    <script src="js/lib/jquery.backstretch.min.js"></script>
+    <!-- CarouFredSel Source -->
+    <script src="js/lib/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <!-- Mobile Responsive Javascript -->
+    <script src="js/lib/jquery.mobileresponsive.js"></script>
+    <!-- Main Action Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
