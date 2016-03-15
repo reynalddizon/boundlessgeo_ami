@@ -35,17 +35,20 @@ iframe{
     font-weight: 300;
     font-size: 40px;
 }
+
 .header-content h3 {
     font-family:'Merriweather', sans-serif;
     font-weight: 200;
     font-size: 24px;
 }
+
 ul.list li:before {
     position: absolute;
     left: 3px;
     font-family:'FontAwesome';
     content:'\f105';
 }
+
 ul.list {
     padding-left: 28px;
     padding-bottom: 10px;
@@ -55,9 +58,11 @@ ul.list {
     line-height: 28px;
     font-weight: 300;
 }
+
 /*
     [ GENERAL ELEMENTS ]
 */
+
  a {
     -webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
@@ -168,7 +173,6 @@ footer p {
 }
 #container {
     position: relative;
-    margin-left: 220px;
 }
 #container section {
     padding: 40px;
@@ -356,9 +360,9 @@ footer p {
 .home .slide-text {
     position: absolute;
     display: block;
-    bottom:40%;
+    bottom:30%;
     right: 0;
-    left:-220px;
+    left:0px;
     width: 100%;
     padding: 25px;
     z-index: 22;
@@ -369,6 +373,18 @@ footer p {
     border-bottom: 4px solid #25748f;
     background: #25748f;
 }
+
+.home .slide-cover {
+    position: absolute;
+    display: block;
+    height:100%;
+    width: 100%;
+    z-index: 21;
+    margin: 0 auto;
+    text-align: center;
+    background: transparent;
+}
+
 .home .slide-text h2 {
     font-family:'Merriweather', sans-serif;
     font-weight: 500;

@@ -119,3 +119,25 @@ section h2 {
 .btn.btn-light:hover {
 	background: #030b0e;
 }
+
+.btn.btn-invi {
+	background: transparent;
+	border: none;
+	color: white;
+}
+
+.btn.btn-invi:active, .btn.btn-invi:hover, .btn.btn-invi:focus  {
+	color: black;
+}
+
+.btn.btn-inverse {
+	background: #25748f;
+	border: 1px solid white;
+	color: white;
+}
+
+.btn.btn-inverse:active, .btn.btn-inverse:hover, .btn.btn-inverse:focus  {
+	background: white;
+	border: 1px solid white;
+	color: #25748f
+}
