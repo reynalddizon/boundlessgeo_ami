@@ -141,3 +141,12 @@ section h2 {
 	border: 1px solid white;
 	color: #25748f
 }
+
+#banner {
+	margin: 0;
+	padding: 25px !important;
+	padding-left: 40px !important;
+	background: #25748f !important;
+	width: 100%;
+}
+

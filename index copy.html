@@ -40,9 +40,79 @@
     <div id="loader"></div>
     <div id="main-wrapper">
         <div id="container">
-        	<section id="banner">
-        		<img src="images/boundless_logo_white.png" width="200"/>
-        	</section><!-- BEGIN DOWNLOADS -->
+            <!-- BEGIN HOME -->
+            <section id="home" class="home">
+               	<div id="home-slide"">
+               		<div>
+               			<div class="slide-text">
+                                <h2>Boundless Geo AMI</h2>
+                                <span>Build intelligent maps and apps with the geospatial power of our standards-based platform.</span>
+                                <br/><br/>
+                                <a class="sscroll btn btn-invi" href="#downloads"><i class="fa fa-angle-down fa-3x"></i></a>
+                            </div>
+                            <div class="slide-cover"></div>
+                    </div>
+                    <ul class="slides-container text-center">
+                        <li>
+                        	<div class="slide-filter"></div>
+                           <div id="map" class="map" style="opacity:0.3"></div>
+    						<script type="text/javascript">
+      							var map = new ol.Map({
+        						target: 'map',
+        						layers: [
+          							new ol.layer.Tile({
+            						source: new ol.source.Stamen({layer: 'terrain'})
+          								})
+        							],
+        						view: new ol.View({
+          						center: ol.proj.fromLonLat([-73.981853,40.768078]),
+          						zoom: 16
+        							})
+      							});
+   				 			</script>
+                        </li>
+                        <li>
+                            <div class="slide-filter"></div>
+                           <div id="map2" class="map" style="opacity:0.3"></div>
+    						<script type="text/javascript">
+      							var map2 = new ol.Map({
+        						target: 'map2',
+        						layers: [
+          							new ol.layer.Tile({
+            						source: new ol.source.Stamen({layer: 'terrain'})
+          								})
+        							],
+        						view: new ol.View({
+          						center: ol.proj.fromLonLat([-122.409751,37.807335]),
+          						zoom: 16
+        							})
+      							});
+   				 			</script>
+                        </li>
+                        <li>
+                        <div class="slide-cover"></div>
+                            <div class="slide-filter"></div>
+                           <div id="map3" class="map" style="opacity:0.3"></div>
+    						<script type="text/javascript">
+      							var map3 = new ol.Map({
+        						target: 'map3',
+        						layers: [
+          							new ol.layer.Tile({
+            						source: new ol.source.Stamen({layer: 'terrain'})
+          								})
+        							],
+        						view: new ol.View({
+          						center: ol.proj.fromLonLat([-87.618853,41.881954]),
+          						zoom: 16
+        							})
+      							});
+   				 			</script>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- END HOME -->
+            <!-- BEGIN DOWNLOADS -->
             <section id="downloads" class="about">
                 <div class="row">
                     <div class="col-md-12 mg-bt-20">
@@ -60,7 +130,7 @@
                                     	<p>OpenLayers has been developed to further the use of geographic information of all kinds and can display or manipulate tiles and features from almost any source across a variety of devices.</p>
                                     </div>
                                     <div class="btn-container">
-                                    	<a class="btn btn-light small btn-block" href="doc/index.html">Download</a>
+                                    	<a class="btn btn-light small btn-block" href="#">Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -71,7 +141,7 @@
                                     	<p>OpenLayers is a JavaScript library for displaying or editing geospatial data in any modern desktop or mobile web browser.</p>
                                     </div>
                                     <div class="btn-container">
-                                    	<a class="btn btn-light small btn-block" href="build/ol.js">Download</a>
+                                    	<a class="btn btn-light small btn-block" href="#">Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +152,7 @@
                                         <p>QGIS is a cross-platform desktop application for viewing, editing,Qgis icon and analyzing geospatial data from a variety of vector, raster, and database formats.</p>
                                     </div>
                                     <div class="btn-container">
-                                    	<a class="btn btn-light small btn-block" href="downloads/OpenGeo-QGIS-2.8.3.exe">Download</a>
+                                    	<a class="btn btn-light small btn-block" href="#">Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +163,7 @@
                                         <p>QGIS is a cross-platform desktop application for viewing, editing,Qgis icon and analyzing geospatial data from a variety of vector, raster, and database formats.</p>
                                     </div>
                                     <div class="btn-container">
-                                    	<a class="btn btn-light small btn-block" href="downloads/OpenGeo-QGIS-2.8.3.dmg ">Download</a>
+                                    	<a class="btn btn-light small btn-block" href="#">Download</a>
                                     </div>
                                 </div>
                             </div>
